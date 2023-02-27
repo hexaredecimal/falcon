@@ -1,0 +1,7 @@
+
+func main() -> i32:
+    let fp: file = open("./loops.flc", "r")
+    let buffer: string = readfile(fp)
+    print(buffer)
+    closefile(fp)
+    return 0

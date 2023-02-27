@@ -1,0 +1,33 @@
+
+enum Type:
+	TYPE_VALID, 
+	TYPE_INVALID,
+	TYPE_UNKNOWN,
+
+func getTypeName(type: Type) -> string:
+	match type:
+		when TYPE_VALID:
+			return "TYPE_VALID"
+		when TYPE_INVALID:
+			return "TYPE_INVALID"
+		else:
+			return "TYPE_UNKNOWN"
+
+func main() -> i32:
+	print("Enter a number: [0 - 2]: ")
+	let number: string = readline()
+
+	let type_id: string 
+	
+	if number == "0":
+		type_id = getTypeName(TYPE_VALID)
+	elif number == "1":
+		type_id = getTypeName(TYPE_INVALID)
+	elif number == "2":
+		type_id = getTypeName(TYPE_UNKNOWN)
+
+	println(type_id)
+
+	return 0
+
+

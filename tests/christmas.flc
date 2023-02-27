@@ -1,0 +1,20 @@
+
+
+func main() -> i32:
+    let max = 10
+    let mirror = 0
+    for y in 0..max:
+        for p in 0..max-y:
+            print(" ")
+        for x in 0..y + mirror:
+            print("*")
+        println(" ")
+        mirror = mirror + 1
+
+    
+    for p in 0..max/2:
+        for j in 0..mirror -1:
+            print(" ")
+        
+        println("| |")
+

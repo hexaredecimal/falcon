@@ -1,0 +1,15 @@
+
+func dup(x: string, count: i32) -> string:
+    let result: string = ""
+    for i in 1 .. count:
+        result = result + x
+
+    return result
+
+func main() -> i32:
+    println(dup("-", 50))
+
+    for i in 1 .. 5:
+        for j in 1 .. i:
+            print("*")
+        println("")

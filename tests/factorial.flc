@@ -1,0 +1,13 @@
+
+
+func factorial(x: i32) -> i32:
+    if x <= 1:
+        return 1
+    
+    return x * factorial(x - 1)
+
+func main() -> i32:
+    let result: i32 = factorial(5)
+    print("The factoral of 5 is ")
+    println(result)
+    return 0

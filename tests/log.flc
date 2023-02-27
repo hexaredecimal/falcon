@@ -1,0 +1,10 @@
+
+
+
+func main() -> i32:
+    log("hello, world")
+    let fp: file = open("./tests/test", "w")
+    // write this string message to a file
+    logf(fp, "The file logger is working like a charm :(")
+
+    return 0

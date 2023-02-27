@@ -1,0 +1,14 @@
+
+
+func main() -> i32:
+    let array = [1,2,3,4,5]
+    let index = 0
+
+    while index < len(array):
+        println(array[index])
+        index = index + 1
+
+    print("array::size = ")
+    println(len(array))
+    return 0
+

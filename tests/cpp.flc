@@ -1,0 +1,8 @@
+__cpp__:
+    "#include <iostream>"
+
+func main() -> i32:
+    __cpp__:
+        "std::cout << \"Hello, world, from inline c++ in falcon\\n\";"
+
+    return 0

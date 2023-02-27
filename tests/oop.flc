@@ -1,0 +1,20 @@
+
+
+class Program:
+    let name: string
+
+    func setName(n: string) -> void:
+        name = n
+	
+
+func print(message: Program) -> i32:
+    println(message::name)
+    return 0
+
+func main() -> i32:
+    let program: Program = Program("none")
+    print(program)
+    program = Program("SomeThing")
+    print(program)
+    return 0
+
